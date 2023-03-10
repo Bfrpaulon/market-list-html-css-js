@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="assets\style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo da Lista de Compras">
+        <h1>Lista de Compras</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="add-item">
+        <h2>Adicionar Item</h2>
+        <div class="item-form">
+          <input type="text" id="item-name" placeholder="Nome do item">
+          <input type="number" id="item-price" placeholder="Preço do item">
+          <div class="button-container">
+            <button id="add-button"><i class="fas fa-plus"></i> Adicionar item</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="item-list">
+        <h2>Lista de Compras</h2>
+        <ul id="items">
+          <!-- Aqui serão adicionados os itens dinamicamente -->
+        </ul>
+      </section>
+
+      <section id="total-price">
+        <h2>Total</h2>
+        <ul id="total-items">
+          <!-- Aqui será mostrado o preço total dinamicamente -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Lista de Compras. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
