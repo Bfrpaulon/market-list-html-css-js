@@ -1,89 +1,118 @@
-/* Fonte padrão */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Cores */
-  :root {
-    --verde-claro: #8bc34a;
-    --branco: #fff;
-    --laranja: #ff9800;
-  }
-  
-  /* Estilos de botões */
-  button {
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
-  
-  button.primary {
-    background-color: var(--verde-claro);
-    color: var(--branco);
-  }
-  
-  button.secondary {
-    background-color: transparent;
-    color: var(--verde-claro);
-    border: 1px solid var(--verde-claro);
-  }
-  
-  button.danger {
-    background-color: transparent;
-    color: var(--laranja);
-    border: 1px solid var(--laranja);
-  }
-  
-  /* Estilos de seção */
-  section {
-    margin: 16px 0;
-    padding: 16px;
-    background-color: var(--branco);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  }
-  
-  /* Estilos de formulário */
-  form {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  form input[type="text"],
-  form input[type="number"] {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 200px;
-  }
-  
-  /* Estilos de tabela */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  table th,
-  table td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  table th {
-    font-weight: bold;
-  }
-  
-  /* Estilos de rodapé */
-  footer {
-    margin-top: 32px;
-    text-align: center;
-    color: #999;
-  }
-  
+  background-color: #f2dfb1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #674d69;
+}
+
+header {
+  background-color: #ff7c70;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #b7c9a9;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 33%;
+}
+
+input[type="text"],
+input[type="number"] {
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+}
+
+button {
+  background-color: #ff7c70;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #674d69;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.list-item span {
+  font-size: 18px;
+}
+
+.list-item button {
+  background-color: #674d69;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.list-item button:hover {
+  background-color: #2e292e;
+}
+
+.total-section {
+  background-color: #674d69;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.total-section h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.total-section p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.footer {
+  background-color: #2e292e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #f2dfb1;
+}
+
