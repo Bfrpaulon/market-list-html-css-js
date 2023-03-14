@@ -1,49 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Lista de Compras</title>
-    <link rel="stylesheet" href="assets\style.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="logo.png" alt="Logo da Lista de Compras">
-        <h1>Lista de Compras</h1>
-      </div>
-    </header>
+<html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <title>Market List App</title>
+     <link rel="stylesheet" href="assets/style.css">
+   </head>
+   <body>
+     <header>
+       <h1>Market List App</h1>
+     </header>
+     <main>
+       <div class="container">
+         <form id="form-product">
+           <input type="text" name="product_name" placeholder="Product Name">
+           <input type="number" name="price" step="0.01" placeholder="Price">
+           <button type="submit">Register</button>
+         </form>
 
-    <main>
-      <section id="add-item">
-        <h2>Adicionar Item</h2>
-        <div class="item-form">
-          <input type="text" id="item-name" placeholder="Nome do item">
-          <input type="number" id="item-price" placeholder="Preço do item">
-          <div class="button-container">
-            <button id="add-button"><i class="fas fa-plus"></i> Adicionar item</button>
-          </div>
-        </div>
-      </section>
+         <div id="list-products">
+           <!-- List of Registered Products -->
+         </div>
 
-      <section id="item-list">
-        <h2>Lista de Compras</h2>
-        <ul id="items">
-          <!-- Aqui serão adicionados os itens dinamicamente -->
-        </ul>
-      </section>
+         <div id="total">
+           <p>Total: <span>BRL 0.00</span></p>
+         </div>
 
-      <section id="total-price">
-        <h2>Total</h2>
-        <ul id="total-items">
-          <!-- Aqui será mostrado o preço total dinamicamente -->
-        </ul>
-      </section>
-    </main>
+         <div class="actions">
+           <button id="clear">Clear List</button>
+           <button id="save">Save List</button>
+         </div>
+       </div>
+     </main>
+     <footer>
+       <p>&copy; 2023 Supermarket List. All rights reserved.</p>
+     </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+     <script src="/assets/script.js"></script>
+     <script src="/assets/save.js"></script>
 
-    <footer>
-      <p>&copy; 2023 Lista de Compras. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="/assets/script.js"></script>
-  </body>
+   </body>
 </html>
